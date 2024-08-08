@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lazar Petrovic - Curriculum Vitae</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Roboto", sans-serif; }
+    html { background: rgb(2,0,36); color: #ddd; }
+    body { font-size: 18px; }
+    ::selection { background-color: yellow; color: black; }
+
+    main {
+      background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(8,38,140,1) 50%, rgba(9,9,121,1) 75%, rgba(2,0,36,1) 100%);
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .container {
+      width: 100%;
+      margin: auto;
+      border-left: 3px solid #ddd;
+      border-right: 3px solid #ddd;
+      padding: 1rem;
+    }
+
+    .container-main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15rem;
+    }
+
+    [name="image"] {
+      max-width: 250px;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    [name="socials"] {
+      background-color: #333;
+      margin-top: 2rem;
+      list-style-type: none;
+      display: flex;
+      gap: 0.25rem;
+      justify-content: space-evenly;
+      border: 3px solid #ddd;
+      padding: 0.5rem;
+    }
+
+    a { text-decoration: none; color: lightgreen; }
+    a:visited { color: red; }
+
+    [name="experience"],
+    [name="projects"],
+    [name="skills"],
+    [name="languages"],
+    [name="references"] { margin-bottom: 1rem; }
+
+    [name="corporate-experience"],
+    [name="personal-projects"],
+    [name="skills-developed"],
+    [name="languages-spoken"],
+    [name="references-provided"] { list-style-position: inside; }
+
+    [name="corporate-experience"] > li > div { margin-left: 1.5rem; }
+    hr { margin-bottom: 1.5rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container container-main">
+      <div class="container-info">
+        <h1 name="name">Lazar Petrović</h1>
+        <h2 name="email">E-mail: petrovic.lazar.1997@gmail.com</h2>
+        <ul name="socials">
+          <li>
+            <a target="_blank" href="https://linkedin.com/in/lazar-petrovic-209220174">LinkedIn</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/LazarPetrovic1">GitHub</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://stackoverflow.com/users/13454247/lazar-petrovic">StackOverflow</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.youtube.com/channel/UCg4TtphO_BFbo4wC_cJ3uRA">YouTube</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://lazarpetrovic1.github.io/portfolio/">Portfolio</a>
+          </li>
+        </ul>
+      </div>
+      <img name="image" src="https://media.licdn.com/dms/image/D4D03AQF_B9IHZmHFiQ/profile-displayphoto-shrink_800_800/0/1674396533195?e=1728518400&v=beta&t=1owMLnnA7AbLdJlV6ufvJ8hM0pWAWGcDVOk6zyPJZK0" alt="Pretend this is an image of a handsome young man.">
+    </div>
+    <div class="container container-experience">
+      <hr>
+      <h1 name="experience">Professional experience</h1>
+      <ol name="corporate-experience">
+        <li>
+          <div>
+            <b>Junior Fullstack Developer (Front-end heavy)</b> <br>
+            <b>
+              <a target="_blank" href="https://www.digitalinfinity.rs/">Digital Infinity D.O.O</a>
+            </b> - <b>Dec 2019 ~ May 2020</b>
+            <p>
+              + Engineered a food-order and delivery app in React.js, optimizing use experience and functionality.
+            </p>
+            <p>
+              + Revamped a hardware-store online webapp, including SEO, thus maximizing their online presence.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>Junior Cybersecurity Analyst</b> <br>
+            <b>
+              <a target="_blank" href="https://itfirmeunisu.rs/rcmt-it-europe">RCMT IT Europe</a>
+            </b> - <b>Jul 2020 ~ Jan 2021</b>
+            <p>
+              +	Monitored network security and managed event logging using QRadar Analyst & QRadar Admin driving improvements in data analysis and cybersecurity.
+            </p>
+            <p>
+              + Administered Linux environments with Kali Linux & CentOS for Linux administration, ensuring robust system security and operational stability
+            </p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>Fullstack JavaScript/TypeScript Developer</b> <br>
+            <b>
+              <a target="_blank" href="http://www.autview.com/">Autview D.O.O.</a>
+            </b> - <b>Jul 2021 ~ Jan 2022</b>
+            <p>
+              +	Developed a CAD industry app in Vue & Electron, implementing stringent measures to safeguard sensitive information.
+            </p>
+            <p>
+              + Designed and implemented a client and payment tracking app for contractors, employers & landlords using Vue.js, streamlining financial management processes.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>Medior Front-end Developer (React & Next.js)</b> <br>
+            <b>
+              <a target="_blank" href="https://wisertech.com/">Wiser Tech (formerly Prime Software)</a>
+            </b> - <b>Feb 2022 ~ Sep 2022</b>
+            <p>
+              +	Enhanced an internal administrative system with React & Next.js, boosting operational efficiency.
+            </p>
+            <p>
+              + Built a video-sharing application, creating an administrator panel in Vue and Nuxt.js and a user-facing application in React and Next.js, improving user engagement and management capabilities.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>Senior Front-end Developer (React & Next.js)</b> <br>
+            <b>
+              <a target="_blank" href="https://www.vrize.com/">VRize Inc.</a>
+            </b> - <b>Oct 2022 ~ Jan 2024</b>
+            <p>
+              +	Developed an appointment-making application for a US healthcare service, steamlining and optimizing scheduling processes and user accessibility.
+            </p>
+            <p>
+              + Documented and transitioned projects from third-party vendors, ensuring seamless integration and continuity.
+            </p>
+            <p>
+              + Engineered a medical application in React for Data Scientists and a supplier application in Selenium/Java, enhancing data analysis and procurement processes.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>Senior Front-end Developer (React & Next.js)</b> <br>
+            <b>
+              <a target="_blank" href="https://www.centific.com/">Centific Inc.</a>
+            </b> - <b>Apr 2024 ~ present day</b>
+            <p>
+              +	Optimizing accessibility features for Voice Access and Screen Readers on Microsoft platforms, both internal and external, improving inclusivity for all users.
+            </p>
+            <p>
+              +	Catching, documenting and fixing all bugs pertaining to Microsoft platforms.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <div class="container container-projects">
+      <hr>
+      <h1 name="projects">Personal software projects</h1>
+      <ul name="personal-projects">
+        <li>
+          Developed “LuxeDrive”, a comprehensive Saas application for vehicle manufacturing, sales and distribution.
+        </li>
+        <li>
+          Created “Impulse”, a dynamic social-network-like application, enhancing social connectivity and user interaction. The demonstration can be seen <a href="https://youtu.be/vgf1n9-_7TY?t=296">in this video</a>.
+        </li>
+      </ul>
+    </div>
+    <div class="container container-skills">
+      <hr>
+      <h1 name="skills">Skills developed</h1>
+      <ul name="skills-developed">
+        <li>
+          Achieved expertise of React.js, Next.js & Node.js.
+        </li>
+        <li>
+          Became proficient in server-side-coding with Express.js, NestJS w/ TypeScript & FastAPI.
+        </li>
+        <li>
+          Developed experienced with using MongoDB & PostgreSQL for data management.
+        </li>
+        <li>
+          Learned how to use Jest.js, Cypress and react-testing-library for robust testing to improve maintenance.
+        </li>
+      </ul>
+    </div>
+    <div class="container container-languages">
+      <hr>
+      <h1 name="languages">Languages spoken</h1>
+      <ul name="languages-spoken">
+        <li>Serbian: Native language</li>
+        <li>English: Native level</li>
+        <li>German: Advanced level</li>
+        <li>Japanese: Intermediate level</li>
+      </ul>
+    </div>
+    <div class="container container-references">
+      <hr>
+      <h1 name="references">References provided</h1>
+      <ul name="references-provided">
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/priyanka-bhargava-636a8843/">Priyanka Bhargava (Project Manager)</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/aleksandar-ljubic-16492116/">Aleksandar Ljubic (Senior HR Manager)</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/marko-vu%C4%8Dkovi%C4%87-6513a3139/">Marko Vuckovic (Senior Software Engineer)</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/vanja-stanimirovic-63aaab264/">
+            Vanja Stanimirovic (Junior Software Engineer)
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/viyola-lasrado-866139171/">
+            Viyola Lasrado (Software Engineer)
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/bunnydany/">
+            Danijela Djokic (QA Automation Engineer)
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/ivanakomatinaa/">
+            Ivana Komatina (QA Automation Engineer)
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/lana-stamenkovic-hr-consultant/">
+            Lana Stamenkovic (Senior HR Manager)
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/sara-randjelovic-7964a71ba/">
+            Sara Randjelovic (QA Automation Engineer)
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/marina-vasovic-b00953127/">
+            Marina Vasovic (QA Automation Engineer)
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/bojan-istvancic-195404127/">
+            Bojan Istvancic (Senior Front-end Developer)
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/vsepecan/">
+            Vasilije Sepecan (Junior Back-end Developer)
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/aleksandarvaricak/">
+            Aleksandar Varicak (Group Engineering Manager / CTO)
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/aleksandar-mijailovic-65b09a251/">
+            Aleksandar Mijajlovic (Back-end Developer)
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/hristina-anti%C4%87-46510b161/">
+            Hristina Antic (HR Specialist)
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/bojana-pejic-896a71172/">
+            Bojana Pejic (HR Specialist)
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/djsimic1311/">
+            Djordje Simic (Front-end developer & my former student)
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/dusan-vulic-226882174/">
+            Dusan Vulic (Senior React developer)
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/andrewharmati/">
+            Andrew Harmati (CEO at TalentWorldGroup Plc)
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/ansu-kuruvilla-702232183/">
+            Ansu Kuruvilla (Software Engineer)
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
