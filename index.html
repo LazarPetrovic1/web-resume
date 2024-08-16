@@ -14,8 +14,6 @@
 
     main {
       background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(8,38,140,1) 50%, rgba(9,9,121,1) 75%, rgba(2,0,36,1) 100%);
-      max-width: 1000px;
-      margin: auto;
     }
 
     .container {
@@ -28,9 +26,8 @@
 
     .container-main {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      gap: 15rem;
     }
 
     [name="image"] {
@@ -67,6 +64,118 @@
 
     [name="corporate-experience"] > li > div { margin-left: 1.5rem; }
     hr { margin-bottom: 1.5rem; }
+
+    @media screen and (max-width: 930px) {
+      body { font-size: 17px; }
+      .container-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      [name="name"], [name="experience"],
+      [name="projects"], [name="skills"],
+      [name="languages"], [name="references"] { font-size: 30px; }
+      [name="email"] { font-size: 25px; }
+
+      [name="image"] {
+        max-width: 150px;
+        height: auto;
+        border-radius: 50%;
+      }
+    }
+
+    @media screen and (max-width: 810px) {
+      body { font-size: 17px; }
+      .container-main {
+        display: flex;
+        font-size: 16px;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      [name="name"], [name="experience"],
+      [name="projects"], [name="skills"],
+      [name="languages"], [name="references"] { font-size: 25px; }
+      [name="email"] { font-size: 20px; }
+
+      [name="image"] {
+        max-width: 100px;
+        height: auto;
+        border-radius: 50%;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      body { font-size: 15px; }
+      .container-main {
+        display: flex;
+        font-size: 14px;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      [name="name"], [name="experience"],
+      [name="projects"], [name="skills"]
+      [name="languages"], [name="references"] { font-size: 20px; }
+      [name="email"] { font-size: 17px; }
+
+      [name="image"] {
+        max-width: 90px;
+        height: auto;
+        border-radius: 50%;
+      }
+
+      [name="socials"] {
+        background-color: #333;
+        margin-top: 1rem;
+        list-style-type: none;
+        display: flex;
+        gap: 0.25rem;
+        justify-content: space-evenly;
+        border: 3px solid #ddd;
+        padding: 0.5rem;
+        font-size: 12px;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      body { font-size: 15px; }
+      .container-main {
+        display: flex;
+        font-size: 12px;
+        justify-content: space-between;
+        flex-flow: column wrap;
+        align-items: center;
+      }
+      
+      .container-info { order: 2; }
+
+      [name="name"], [name="experience"],
+      [name="projects"], [name="skills"]
+      [name="languages"], [name="references"]  { font-size: 16px; }
+      [name="email"] { font-size: 13px; }
+
+      [name="image"] {
+        margin-bottom: 2rem;
+        max-width: 120px;
+        height: auto;
+        border-radius: 50%;
+        order: 1;
+      }
+
+      [name="socials"] {
+        background-color: #333;
+        margin-top: 1rem;
+        list-style-type: none;
+        display: flex;
+        gap: 0.25rem;
+        justify-content: space-evenly;
+        border: 3px solid #ddd;
+        padding: 0.5rem;
+        font-size: 10px;
+      }
+    }
   </style>
 </head>
 <body>
