@@ -11,7 +11,7 @@
     body { font-size: 18px; }
     ::selection { background-color: yellow; color: black; }
     main { background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(8,38,140,1) 50%, rgba(9,9,121,1) 75%, rgba(2,0,36,1) 100%); }
-
+    .summary-lead, .competence-lead { font-size: 1.2rem; }
     .container {
       width: 100%;
       margin: auto;
@@ -47,9 +47,11 @@
     a:visited { color: red; }
 
     [name="experience"],
+    [name="summary"],
     [name="projects"],
     [name="skills"],
     [name="languages"],
+    [name="competencies"],
     [name="references"] { margin-bottom: 1rem; }
 
     [name="corporate-experience"],
@@ -200,57 +202,40 @@
       </div>
       <img name="image" src="./ja.jfif" alt="Pretend this is an image of a handsome young man.">
     </div>
+    <div class="container container-summary">
+      <hr>
+      <h1 name="summary">Professional summary</h1>
+      <div class="summary-lead">
+        Senior Frontend & Full-Stack Engineer with 8+ years of experience building scalable SaaS platforms using React, Next.js,
+        TypeScript, and Node.js. Proven track record delivering high-performance, accessible, and AI-powered web applications in Agile
+        environments. Experienced in architecting distributed systems, optimizing frontend performance, and driving measurable
+        improvements in user engagement, system reliability, and development velocity.
+      </div>
+    </div>
     <div class="container container-experience">
       <hr>
       <h1 name="experience">Professional experience</h1>
       <ol name="corporate-experience">
         <li>
           <div>
-            <b>Fullstack Developer (Front-end heavy)</b> <br>
+            <b>Senior Front-end Developer (React & Next.js)</b> <br>
             <b>
-              <a target="_blank" href="https://www.digitalinfinity.rs/">Digital Infinity D.O.O</a>
-            </b> - <b>Aug 2015 ~ Jul 2017</b>
+              <a target="_blank" href="https://www.centific.com/">Centific Inc.</a>
+            </b> - <b>Jan 2024 - September 2025</b>
             <p>
-              + Engineered a food-order and delivery app in React.js, optimizing use experience and functionality.
+              ・ Defined and led the architecture of AI-powered web applications, integrating LLM-driven workflows across frontend and backend systems, significantly improving automation efficiency.
             </p>
             <p>
-              + Revamped a hardware-store online webapp, including SEO, thus maximizing their online presence.
+              ・ Owned frontend performance strategy, achieving ~35% improvement in load times through code splitting, lazy loading, and bundle optimization.
             </p>
             <p>
-              + Developed a secure authentication and authorization system for sounder.fm (now sounder.ai), extended
-              podcasting features and functionalities as well as implemented a payment system, thus bringing the
-              organization to solvency.
-            </p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <b>Fullstack JavaScript/TypeScript Developer</b> <br>
-            <b>
-              <a target="_blank" href="http://www.autview.com/">Autview D.O.O.</a>
-            </b> - <b>Jul 2017 ~ Jan 2020</b>
-            <p>
-              +	Developed a CAD industry app in Vue & Electron, implementing stringent measures to safeguard sensitive information.
+              ・ Established accessibility standards across Microsoft-integrated platforms (Voice Access, screen readers), reducing accessibilityrelated defects and strengthening WCAG compliance.
             </p>
             <p>
-              + Designed and implemented a client and payment tracking app for contractors, employers & landlords using Vue.js, streamlining financial management processes.
+              ・ Acted as a technical lead across cross-functional Agile teams, aligning engineering efforts with product priorities and accelerating delivery timelines.
             </p>
             <p>
-              + Developed an internal employee application used by OMV (Vue/Nest/TypeScript/Node/PostgreSQL).
-            </p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <b>Medior Front-end Developer (React & Next.js)</b> <br>
-            <b>
-              <a target="_blank" href="https://wisertech.com/">Wiser Tech (formerly Prime Software)</a>
-            </b> - <b>Feb 2020 ~ May 2021</b>
-            <p>
-              +	Enhanced an internal administrative system with React & Next.js, boosting operational efficiency.
-            </p>
-            <p>
-              + Built a video-sharing application, creating an administrator panel in Vue and Nuxt.js and a user-facing application in React and Next.js, improving user engagement and management capabilities.
+              ・ Diagnosed and resolved systemic issues across enterprise-scale ecosystems, improving platform stability and reducing incident frequency.
             </p>
           </div>
         </li>
@@ -261,39 +246,85 @@
               <a target="_blank" href="https://www.vrize.com/">VRize Inc.</a>
             </b> - <b>Jun 2021 ~ Jan 2024</b>
             <p>
-              +	Developed an appointment-making application for a US healthcare service, steamlining and optimizing scheduling processes and user accessibility.
+              ・ Led frontend architecture for a large-scale healthcare platform, improving user experience and reducing friction in the appointment booking process.
             </p>
             <p>
-              + Documented and transitioned projects from third-party vendors, ensuring seamless integration and continuity.
+              ・ Designed and implemented secure, scalable API integrations with third-party healthcare systems, ensuring HIPAA-aligned data handling and reliable interoperability.
             </p>
             <p>
-              + Engineered a medical application in React for Data Scientists and a supplier application in Selenium/Java, enhancing data analysis and procurement processes.
+              ・ Partnered with data science teams to build internal platforms, improving analytics workflow efficiency and usability.
             </p>
             <p>
-              + Thoroughly tested applications with Cypress & react-testing library, cutting down on development costs
-              by 64%.
+              ・ Defined and implemented a comprehensive testing strategy, reducing regression defects and improving release confidence.
+            </p>
+            <p>
+              ・ Contributed to CI/CD improvements and developer workflows, enabling faster and more reliable deployments.
             </p>
           </div>
         </li>
         <li>
           <div>
-            <b>Senior Front-end Developer (React & Next.js)</b> <br>
+            <b>Medior Front-end Developer (React & Next.js)</b> <br>
             <b>
-              <a target="_blank" href="https://www.centific.com/">Centific Inc.</a>
-            </b> - <b>Jan 2024 - September 2025</b>
+              <a target="_blank" href="https://wisertech.com/">Wiser Tech (formerly Prime Software)</a>
+            </b> - <b>Feb 2020 ~ May 2021</b>
             <p>
-              +	Optimizing accessibility features for Voice Access and Screen Readers on Microsoft platforms, both internal and external, improving inclusivity for all users and thus cutting down on load times significantly.
+              ・ Re-architected internal systems using React and Next.js, improving operational efficiency and maintainability.
             </p>
             <p>
-              +	Catching, documenting and fixing all bugs pertaining to Microsoft platforms, thereby improving
-              performance.
+              ・ Delivered a full-stack video platform (Next.js + Vue), increasing user engagement and session duration.
             </p>
             <p>
-              + Implementing large-language models (LLMs) as chatbots for hospitality applications
+              ・ Developed reusable component libraries and frontend standards, improving consistency and reducing development effort across teams.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>Fullstack JavaScript/TypeScript Developer</b> <br>
+            <b>
+              <a target="_blank" href="http://www.autview.com/">Autview D.O.O.</a>
+            </b> - <b>Jul 2017 ~ Jan 2020</b>
+            <p>
+              ・ Built and scaled a cross-platform financial management application (Vue ・ Electron), reducing manual accounting workload.
+            </p>
+            <p>
+              ・ Implemented secure payment processing and client tracking systems, improving transaction reliability and data accuracy.
+            </p>
+            <p>
+              ・ Delivered data visualization dashboards leveraging external APIs, enabling more effective enterprise monitoring.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>Fullstack Developer (Front-end heavy)</b> <br>
+            <b>
+              <a target="_blank" href="https://www.digitalinfinity.rs/">Digital Infinity D.O.O</a>
+            </b> - <b>Aug 2015 ~ Jul 2017</b>
+            <p>
+              ・ Delivered a production-grade SaaS food ordering platform, improving application performance and user experience.
+            </p>
+            <p>
+              ・ Designed secure authentication and authorization systems using modern best practices.
+            </p>
+            <p>
+              ・ Modeled and maintained scalable PostgreSQL databases, ensuring strong data integrity and system reliability.
             </p>
           </div>
         </li>
       </ol>
+    </div>
+    <div class="container container-competencies">
+      <hr>
+      <h1 name="competencies">Core competencies</h1>
+      <p class="competence-lead">
+        Frontend Architecture • React.js • Next.js • TypeScript • JavaScript (ES6+) • Full-Stack Development • Node.js • Express.js •
+        FastAPI • RESTful APIs • Microservices • Scalable SaaS Platforms • Performance Optimization • Accessibility (WCAG, ARIA) •
+        Cross-Browser Compatibility • State Management • Redux • Context API • Testing • Cypress • Jest • React Testing Library •
+        Databases • PostgreSQL • MongoDB • CI/CD Pipelines • Git • Agile/Scrum • Code Reviews • AI-Integrated Applications • LLM
+        Integrations
+      </p>
     </div>
     <div class="container container-projects">
       <hr>
@@ -333,7 +364,6 @@
         <li>Serbian: Native language</li>
         <li>English: Native level</li>
         <li>German: Advanced level</li>
-        <li>Japanese: Intermediate level</li>
       </ul>
     </div>
     <div class="container container-references">
@@ -362,7 +392,7 @@
           <a target="_blank" href="https://www.linkedin.com/in/marko-vu%C4%8Dkovi%C4%87-6513a3139/">Marko Vuckovic (Senior Software Engineer)</a>
         </li>
         <li>
-          <a target="_blank" href="https://www.linkedin.com/in/vanja-stanimirovic-63aaab264/">Vanja Stanimirovic (Junior Software Engineer)</a>
+          <a target="_blank" href="https://www.linkedin.com/in/vanja-stanimirovic-63aaab264/">Vanja Stanimirovic (Software Engineer)</a>
         </li>
         <li>
           <a target="_blank" href="https://www.linkedin.com/in/viyola-lasrado-866139171/">Viyola Lasrado (Software Engineer)</a>
@@ -401,7 +431,7 @@
           <a target="_blank" href="https://www.linkedin.com/in/bojana-pejic-896a71172/">Bojana Pejic (HR Specialist)</a>
         </li>
         <li>
-          <a target="_blank" href="https://www.linkedin.com/in/djsimic1311/">Djordje Simic (Front-end developer & my former student)</a>
+          <a target="_blank" href="https://www.linkedin.com/in/djsimic1311/">Djordje Simic (Front-end developer & my former mentee)</a>
         </li>
         <li>
           <a target="_blank" href="https://www.linkedin.com/in/dusan-vulic-226882174/">Dusan Vulic (Senior React developer)</a>
@@ -411,6 +441,9 @@
         </li>
         <li>
           <a target="_blank" href="https://www.linkedin.com/in/ansu-kuruvilla-702232183/">Ansu Kuruvilla (Software Engineer)</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/vladan-vulic-8b2ba1218/">Vladan Vulic (Junior Developer & mentee)</a>
         </li>
       </ul>
     </div>
