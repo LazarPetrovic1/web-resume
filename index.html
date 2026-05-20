@@ -3,178 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lazar Petrovic - Curriculum Vitae</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Roboto", sans-serif; }
-    html { background: rgb(2,0,36); color: #ddd; }
-    body { font-size: 18px; }
-    ::selection { background-color: yellow; color: black; }
-    main { background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(8,38,140,1) 50%, rgba(9,9,121,1) 75%, rgba(2,0,36,1) 100%); }
-    .summary-lead, .competence-lead { font-size: 1.2rem; }
-    .container {
-      width: 100%;
-      margin: auto;
-      border-left: 3px solid #ddd;
-      border-right: 3px solid #ddd;
-      padding: 1rem;
-    }
-
-    .container-main {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    [name="image"] {
-      max-width: 250px;
-      height: auto;
-      border-radius: 50%;
-    }
-
-    [name="socials"] {
-      background-color: #333;
-      margin-top: 2rem;
-      list-style-type: none;
-      display: flex;
-      gap: 0.25rem;
-      justify-content: space-evenly;
-      border: 3px solid #ddd;
-      padding: 0.5rem;
-    }
-
-    a { text-decoration: none; color: lightgreen; }
-    a:visited { color: red; }
-
-    [name="experience"],
-    [name="summary"],
-    [name="projects"],
-    [name="skills"],
-    [name="languages"],
-    [name="competencies"],
-    [name="references"] { margin-bottom: 1rem; }
-
-    [name="corporate-experience"],
-    [name="personal-projects"],
-    [name="skills-developed"],
-    [name="languages-spoken"],
-    [name="references-provided"] { list-style-position: inside; }
-
-    [name="corporate-experience"] > li > div { margin-left: 1.5rem; }
-    hr { margin-bottom: 1.5rem; }
-
-    @media screen and (max-width: 930px) {
-      body { font-size: 17px; }
-      .container-main {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      
-      [name="name"], [name="experience"],
-      [name="projects"], [name="skills"],
-      [name="languages"], [name="references"] { font-size: 30px; }
-      [name="email"] { font-size: 25px; }
-
-      [name="image"] {
-        max-width: 150px;
-        height: auto;
-        border-radius: 50%;
-      }
-    }
-
-    @media screen and (max-width: 810px) {
-      body { font-size: 17px; }
-      .container-main {
-        display: flex;
-        font-size: 16px;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      [name="name"], [name="experience"],
-      [name="projects"], [name="skills"],
-      [name="languages"], [name="references"] { font-size: 25px; }
-      [name="email"] { font-size: 20px; }
-
-      [name="image"] {
-        max-width: 100px;
-        height: auto;
-        border-radius: 50%;
-      }
-    }
-
-    @media screen and (max-width: 500px) {
-      body { font-size: 15px; }
-      .container-main {
-        display: flex;
-        font-size: 14px;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      [name="name"], [name="experience"],
-      [name="projects"], [name="skills"]
-      [name="languages"], [name="references"] { font-size: 20px; }
-      [name="email"] { font-size: 17px; }
-
-      [name="image"] {
-        max-width: 90px;
-        height: auto;
-        border-radius: 50%;
-      }
-
-      [name="socials"] {
-        background-color: #333;
-        margin-top: 1rem;
-        list-style-type: none;
-        display: flex;
-        gap: 0.25rem;
-        justify-content: space-evenly;
-        border: 3px solid #ddd;
-        padding: 0.5rem;
-        font-size: 12px;
-      }
-    }
-
-    @media screen and (max-width: 400px) {
-      body { font-size: 15px; }
-      .container-main {
-        display: flex;
-        font-size: 12px;
-        justify-content: space-between;
-        flex-flow: column wrap;
-        align-items: center;
-      }
-      
-      .container-info { order: 2; }
-
-      [name="name"], [name="experience"],
-      [name="projects"], [name="skills"]
-      [name="languages"], [name="references"]  { font-size: 16px; }
-      [name="email"] { font-size: 13px; }
-
-      [name="image"] {
-        margin-bottom: 2rem;
-        max-width: 120px;
-        height: auto;
-        border-radius: 50%;
-        order: 1;
-      }
-
-      [name="socials"] {
-        background-color: #333;
-        margin-top: 1rem;
-        list-style-type: none;
-        display: flex;
-        gap: 0.25rem;
-        justify-content: space-evenly;
-        border: 3px solid #ddd;
-        padding: 0.5rem;
-        font-size: 10px;
-      }
-    }
-  </style>
+  <link rel="icon" href="./ja.jfif" type="image/jfif">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <main>
@@ -192,9 +22,9 @@
           <li>
             <a target="_blank" href="https://stackoverflow.com/users/13454247/lazar-petrovic">StackOverflow</a>
           </li>
-          <li>
+          <!-- <li>
             <a target="_blank" href="https://www.youtube.com/channel/UCg4TtphO_BFbo4wC_cJ3uRA">YouTube</a>
-          </li>
+          </li> -->
           <li>
             <a target="_blank" href="https://lazarpetrovic1.github.io/portfolio/">Portfolio</a>
           </li>
@@ -218,65 +48,45 @@
       <ol name="corporate-experience">
         <li>
           <div>
-            <b>Senior Front-end Developer (React & Next.js)</b> <br>
+            <b>Senior (Staff) Frontend Engineer</b> <br>
             <b>
               <a target="_blank" href="https://www.centific.com/">Centific Inc.</a>
-            </b> - <b>Jan 2024 - September 2025</b>
-            <p>
-              ・ Defined and led the architecture of AI-powered web applications, integrating LLM-driven workflows across frontend and backend systems, significantly improving automation efficiency.
-            </p>
-            <p>
-              ・ Owned frontend performance strategy, achieving ~35% improvement in load times through code splitting, lazy loading, and bundle optimization.
-            </p>
-            <p>
-              ・ Established accessibility standards across Microsoft-integrated platforms (Voice Access, screen readers), reducing accessibilityrelated defects and strengthening WCAG compliance.
-            </p>
-            <p>
-              ・ Acted as a technical lead across cross-functional Agile teams, aligning engineering efforts with product priorities and accelerating delivery timelines.
-            </p>
-            <p>
-              ・ Diagnosed and resolved systemic issues across enterprise-scale ecosystems, improving platform stability and reducing incident frequency.
-            </p>
+            </b> - <b>Apr 2024 - Dec 2025</b>
+            <p>・ Led enterprise frontend modernization initiatives for Microsoft-integrated platforms, reducing feature delivery timelines through architectural transformation and scalable component systems</p>
+            <p>・ Owned frontend architecture strategy across multiple applications, establishing engineering standards, reusable patterns, and long-term scalability practices</p>
+            <p>・ Directed technical execution across distributed engineering teams, improving release quality and reducing production defects through stronger review and testing processes Implemented enterprise-grade accessibility architecture (WCAG/ARIA), significantly improving compliance readiness and user accessibility standards</p>
+            <p>・ Partnered with engineering leadership, backend teams, and product stakeholders to align platform architecture with long-term business objectives</p>
+            <p>・ Championed maintainability initiatives through modular architecture, shared tooling, and scalable frontend infrastructure</p>
+            <p>・ Led the RFC process for major application and platform initiatives, defining architectural direction, evaluating trade-offs, and driving consensus across frontend, backend, and infrastructure teams</p>
           </div>
         </li>
+        <!-- <hr> -->
         <li>
           <div>
-            <b>Senior Front-end Developer (React & Next.js)</b> <br>
+            <b>Lead Frontend Engineer / Acting Engineering Lead</b> <br>
             <b>
               <a target="_blank" href="https://www.vrize.com/">VRize Inc.</a>
-            </b> - <b>Jun 2021 ~ Jan 2024</b>
-            <p>
-              ・ Led frontend architecture for a large-scale healthcare platform, improving user experience and reducing friction in the appointment booking process.
-            </p>
-            <p>
-              ・ Designed and implemented secure, scalable API integrations with third-party healthcare systems, ensuring HIPAA-aligned data handling and reliable interoperability.
-            </p>
-            <p>
-              ・ Partnered with data science teams to build internal platforms, improving analytics workflow efficiency and usability.
-            </p>
-            <p>
-              ・ Defined and implemented a comprehensive testing strategy, reducing regression defects and improving release confidence.
-            </p>
-            <p>
-              ・ Contributed to CI/CD improvements and developer workflows, enabling faster and more reliable deployments.
-            </p>
+            </b> - <b>Nov 2022 ~ Feb 2024</b>
+            <p>・ Architected and delivered a large-scale healthcare enrollment platform that increased digital conversion rates</p>
+            <p>・  Designed scalable React platform architecture supporting high-volume user interactions and third-party healthcare integrations</p>
+            <p>・ Established frontend quality standards and automated testing strategy using Jest and Cypress, improving release reliability</p>
+            <p>・ Collaborated directly with product leadership and data science teams to deliver highly intuitive data visualization experiences</p>
+            <p>・ Mentored and upskilled frontend developers through architecture guidance, technical reviews, and engineering best practices</p>
+            <p>・ Frequently operated as the senior technical decision-maker for frontend platform direction and implementation strategy</p>
+            <p>・ Drove technical direction through RFCs and design proposals for frontend platform architecture and distributed application systems, influencing implementation strategy across multiple engineering teams</p>
           </div>
         </li>
         <li>
           <div>
-            <b>Medior Front-end Developer (React & Next.js)</b> <br>
+            <b>Senior Software Engineer</b> <br>
             <b>
               <a target="_blank" href="https://wisertech.com/">Wiser Tech (formerly Prime Software)</a>
-            </b> - <b>Feb 2020 ~ May 2021</b>
-            <p>
-              ・ Re-architected internal systems using React and Next.js, improving operational efficiency and maintainability.
-            </p>
-            <p>
-              ・ Delivered a full-stack video platform (Next.js + Vue), increasing user engagement and session duration.
-            </p>
-            <p>
-              ・ Developed reusable component libraries and frontend standards, improving consistency and reducing development effort across teams.
-            </p>
+            </b> - <b>Feb 2022 ~ Aug 2022</b>
+            <p>・ Led frontend architecture initiatives across multiple enterprise React and Vue applications.</p>
+            <p>・ Standardized authentication systems, API integration patterns, and frontend development workflows across teams</p>
+            <p>・ Built reusable component libraries and internal engineering documentation that accelerated delivery velocity</p>
+            <p>・ Served as the primary technical bridge between distributed engineering teams and client stakeholders</p>
+            <p>・  Influenced technical direction and implementation strategy across concurrent client engagements</p>
           </div>
         </li>
         <li>
@@ -284,16 +94,22 @@
             <b>Fullstack JavaScript/TypeScript Developer</b> <br>
             <b>
               <a target="_blank" href="http://www.autview.com/">Autview D.O.O.</a>
-            </b> - <b>Jul 2017 ~ Jan 2020</b>
-            <p>
-              ・ Built and scaled a cross-platform financial management application (Vue ・ Electron), reducing manual accounting workload.
-            </p>
-            <p>
-              ・ Implemented secure payment processing and client tracking systems, improving transaction reliability and data accuracy.
-            </p>
-            <p>
-              ・ Delivered data visualization dashboards leveraging external APIs, enabling more effective enterprise monitoring.
-            </p>
+            </b> - <b>Jun 2021 ~ Jan 2022</b>
+            <p>・ Engineered cross-platform Electron applications supporting CAD dispatch workflows and real-time operational systems</p>
+            <p>・ Optimized IPC communication pipelines for high-frequency data processing, improving responsiveness and application stability</p>
+            <p>・ Designed distributed synchronization systems supporting multi-instance desktop deployments</p>
+            <p>・ Delivered production-grade frontend and desktop architecture within agile product engineering teams</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>Cybersecurity Analyst & Systems Engineer</b> <br>
+            <b>
+              <a target="_blank" href="https://www.facebook.com/rcmt.it.europe.branch.nis">RCMT IT Europe</a>
+            </b> - <b>Jan 2021 ~ Apr 2021</b>
+            <p>・ Completed advanced enterprise training in cybersecurity operations, Linux systems administration, and SIEM infrastructure</p>
+            <p>・ Worked extensively with IBM QRadar for enterprise threat monitoring, incident analysis, and security event correlation</p>
+            <p>・ Earned IBM QRadar Analyst and Administrator certifications focused on enterprise-scale monitoring systems</p>
           </div>
         </li>
         <li>
@@ -301,16 +117,11 @@
             <b>Fullstack Developer (Front-end heavy)</b> <br>
             <b>
               <a target="_blank" href="https://www.digitalinfinity.rs/">Digital Infinity D.O.O</a>
-            </b> - <b>Aug 2015 ~ Jul 2017</b>
-            <p>
-              ・ Delivered a production-grade SaaS food ordering platform, improving application performance and user experience.
-            </p>
-            <p>
-              ・ Designed secure authentication and authorization systems using modern best practices.
-            </p>
-            <p>
-              ・ Modeled and maintained scalable PostgreSQL databases, ensuring strong data integrity and system reliability.
-            </p>
+            </b> - <b>Nov 2019 ~ Jul 2020</b>
+            <p>・ Developed scalable SaaS ordering platforms supporting multi-location US business operations</p>
+            <p>・ Contributed across frontend architecture, backend APIs, and deployment infrastructure within a 30+ engineer environment</p>
+            <p>・ Collaborated with DevOps teams to introduce Docker-based engineering workflows improving deployment consistency</p>
+            <p>・ Participated in full software delivery lifecycle including architecture discussions, implementation, testing, and release operations</p>
           </div>
         </li>
       </ol>
@@ -326,7 +137,7 @@
         Integrations
       </p>
     </div>
-    <div class="container container-projects">
+    <!-- <div class="container container-projects">
       <hr>
       <h1 name="projects">Personal software projects</h1>
       <ul name="personal-projects">
@@ -337,23 +148,15 @@
           Created “Impulse”, a dynamic social-network-like application, enhancing social connectivity and user interaction. The demonstration can be seen <a href="https://youtu.be/vgf1n9-_7TY?t=296">in this video</a>.
         </li>
       </ul>
-    </div>
+    </div> -->
     <div class="container container-skills">
       <hr>
       <h1 name="skills">Skills developed</h1>
       <ul name="skills-developed">
-        <li>
-          Achieved expertise of React.js, Next.js & Node.js.
-        </li>
-        <li>
-          Became proficient in server-side-coding with Express.js, NestJS w/ TypeScript & FastAPI.
-        </li>
-        <li>
-          Developed experienced with using MongoDB & PostgreSQL for data management.
-        </li>
-        <li>
-          Learned how to use Jest.js, Cypress and react-testing-library for robust testing to improve maintenance.
-        </li>
+        <li>Achieved expertise of React.js, Next.js & Node.js.</li>
+        <li>Became proficient in server-side-coding with Express.js, NestJS w/ TypeScript & FastAPI.</li>
+        <li>Developed experienced with using MongoDB & PostgreSQL for data management.</li>
+        <li>Learned how to use Jest.js, Cypress and react-testing-library for robust testing to improve maintenance.</li>
         <li>Learned how to implement LLMs into apps</li>
       </ul>
     </div>
